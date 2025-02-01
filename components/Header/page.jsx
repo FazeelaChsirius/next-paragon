@@ -97,7 +97,7 @@ const Header = () => {
                             alt="scrolling image" 
                             width={200} 
                             height={200} 
-                            className="object-contain p-3"
+                            className="object-contain p-6"
                         />
                     ))}
                 </motion.div>

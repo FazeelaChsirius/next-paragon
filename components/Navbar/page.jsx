@@ -12,7 +12,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <nav className='w-full flex items-center justify-between p-2 md:p-4 bg-gradient-to-b from-[#000022] to-[#000044] shadow-[2px_6px_15px_rgba(308,3,208,0.5)]'>
+    <nav className='relative w-full flex items-center justify-between p-2 md:p-4 bg-gradient-to-b from-[#000022] to-[#000044] shadow-[2px_6px_15px_rgba(308,3,208,0.5)]'>
       <div className='flex items-center justify-center'>
         <Link href='/'>
           <Image 
