@@ -46,38 +46,26 @@ const Header = () => {
                             <span className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-indigo-800 filter brightness-150 pl-48">Obscurity</span>
                             <br />
                             <div className='pt-8'>
-                                <span className="text-4xl font-medium text-gray-200">Securing Tomorrow:</span>
+                                <span className="text-3xl font-medium text-gray-200">Securing Tomorrow:</span>
                                 <br />
-                                <span className="text-4xl font-medium text-gray-200">Advancing Privacy Payments on the Blockchain</span>
+                                <span className="text-3xl font-medium text-gray-200">Advancing Privacy Payments on the Blockchain</span>
                             </div>
                         </h1>
 
-                    {/* Right Side - Image */}
-                    {/* <div className="md:w-1/2 flex justify-center">
-                        <Image
+                    <div className="md:w-1/2 flex justify-center">
+                        <motion.div
+                            animate={{ rotate: [0, 10, -10, 0] }} 
+                            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                        >
+                            <Image
                             src={header}
                             alt="header"
                             width={400}
                             height={400}
                             className="object-contain"
-                        />
-                    </div> */}
-
-                <div className="md:w-1/2 flex justify-center">
-                    <motion.div
-                        animate={{ rotate: [0, 10, -10, 0] }} // ✅ Left-Right Rotation
-                        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                    >
-                        <Image
-                        src={header}
-                        alt="header"
-                        width={400}
-                        height={400}
-                        className="object-contain"
-                        />
-                    </motion.div>
-                    </div>
-                                    
+                            />
+                        </motion.div>
+                    </div>           
                 </div>
 
 
