@@ -1,8 +1,12 @@
 'use client'
 import React from 'react';
+import { useRef, useEffect } from "react";
+
 import { motion } from 'framer-motion';
 import Button from '../Button/page';
 import Image from 'next/image';
+
+import * as THREE from "three";
 
 import header from '../../public/assets/header.png';
 import cyberscope from '../../public/assets/cyberscope.png';
@@ -13,16 +17,7 @@ import parisweek from '../../public/assets/parisweek.png';
 import mode from '../../public/assets/mode.png'
 import redflag from '../../public/assets/redflag.png'
 
-const scaleVariants = {
-    whileInView: {
-        scale: [0, 1],
-        opacity: [0, 1],
-        transition: {
-            duration: 1,
-            ease: 'easeInOut'
-        }
-    }
-};
+
 
 const images = [
     cyberscope, iconscope, malta, parisweek, redflag, mode, manchester,
@@ -30,6 +25,9 @@ const images = [
 ];
 
 const Header = () => {
+ 
+    
+
   return (
     <div className='flex justify-center items-center bg-darkNavy'>
 
@@ -57,7 +55,7 @@ const Header = () => {
                         </h1>
 
                     {/* Right Side - Image */}
-                    <div className="md:w-1/2 flex justify-center">
+                    {/* <div className="md:w-1/2 flex justify-center">
                         <Image
                             src={header}
                             alt="header"
@@ -65,7 +63,23 @@ const Header = () => {
                             height={400}
                             className="object-contain"
                         />
+                    </div> */}
+
+                <div className="md:w-1/2 flex justify-center">
+                    <motion.div
+                        animate={{ rotate: [0, 10, -10, 0] }} // ✅ Left-Right Rotation
+                        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                    >
+                        <Image
+                        src={header}
+                        alt="header"
+                        width={400}
+                        height={400}
+                        className="object-contain"
+                        />
+                    </motion.div>
                     </div>
+                                    
                 </div>
 
 
