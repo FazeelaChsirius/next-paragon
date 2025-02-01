@@ -6,8 +6,6 @@ import { motion } from 'framer-motion';
 import Button from '../Button/page';
 import Image from 'next/image';
 
-import * as THREE from "three";
-
 import header from '../../public/assets/header.png';
 import cyberscope from '../../public/assets/cyberscope.png';
 import iconscope from '../../public/assets/iconscope.png';
@@ -38,7 +36,7 @@ const Header = () => {
                 className='flex flex-col justify-start items-start h-full flex-[0.65] 2xl:w-full 2xl:mr-0'
             >
                
-                <div className='flex items-center justify-between'>
+                <div className='flex items-center justify-between pt-20'>
                     {/* Left Side - Text */}
                         <h1 className="font-extrabold text-gray-200 pl-10">
                             <span className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-indigo-800 filter brightness-150">Privacy</span> 
