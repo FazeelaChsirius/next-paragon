@@ -6,6 +6,7 @@ import Team from "./team/page";
 import Owner from "@/components/Owner/page";
 import Timeline from "@/components/Timeline/page";
 import Quotes from "@/components/Quotes/page";
+import Post from "@/components/Post/page";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Owner />
       <Timeline />
       <Quotes />
+      <Post />
     </div>
   );
 }
