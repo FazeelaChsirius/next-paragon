@@ -5,6 +5,7 @@ import Video from "@/components/Video/page";
 import Team from "./team/page";
 import Owner from "@/components/Owner/page";
 import Timeline from "@/components/Timeline/page";
+import Quotes from "@/components/Quotes/page";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Mission />
       <Owner />
       <Timeline />
+      <Quotes />
     </div>
   );
 }
