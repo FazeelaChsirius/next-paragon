@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar/page";
 import Video from "@/components/Video/page";
 import Team from "./team/page";
 import Owner from "@/components/Owner/page";
+import Timeline from "@/components/Timeline/page";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Video />
       <Mission />
       <Owner />
+      <Timeline />
     </div>
   );
 }
