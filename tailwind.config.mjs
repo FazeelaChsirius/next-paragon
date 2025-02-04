@@ -15,6 +15,7 @@ export default {
         lightBlue: '#667eea',
         darkPurple: '#4B0082',
         lightPurple: '#B06AB3',
+        primarygradient: 'bg-gradient-to-r from-indigo-700 to-purple-900',
         gradient: 'bg-gradient-to-r from-purple-800 to-indigo-800',
       },
       boxShadow: {

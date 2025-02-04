@@ -41,7 +41,7 @@ const Quotes = () => {
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.3 }}
-                        className="bg-gradient-to-r from-purple-800 to-indigo-900 text-white p-6 rounded-lg shadow-lg"
+                        className="bg-gradient-to-r from-indigo-700 to-purple-900 text-white p-6 rounded-lg shadow-lg"
                     >
                         <p className="text-lg font-medium">{quote}</p>
                         <p className="text-right text-bold font-semibold mt-1">— {author[index]}</p>

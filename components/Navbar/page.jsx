@@ -43,7 +43,9 @@ const Navbar = () => {
       </ul>
 
       <div className="hidden md:block pr-6">
-        <Button className="capitalize p-8">BUY PARAGON</Button>
+        <Link href='https://app.uniswap.org/swap/?chain=ethereum&outputcurrency=0x1bbb8b730a9e8c9b5688b8fae862ab9b57b140f2'>
+          <Button className="capitalize p-8">BUY PARAGON</Button>
+        </Link>
       </div>
       
     <div className='block md:hidden'>

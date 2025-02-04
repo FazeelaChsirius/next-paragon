@@ -14,8 +14,7 @@ import malta from '../../public/assets/malta.png';
 import parisweek from '../../public/assets/parisweek.png';
 import mode from '../../public/assets/mode.png'
 import redflag from '../../public/assets/redflag.png'
-
-
+import Link from 'next/link';
 
 const images = [
     cyberscope, iconscope, malta, parisweek, redflag, mode, manchester,
@@ -24,8 +23,6 @@ const images = [
 
 const Header = () => {
  
-    
-
   return (
     <div className='flex justify-center items-center bg-darkNavy'>
 
@@ -70,7 +67,9 @@ const Header = () => {
 
 
                 <div className="hidden md:block pl-10">
-                    <Button className="capitalize p-8">BUY PARAGON</Button>
+                    <Link href='https://app.uniswap.org/swap/?chain=ethereum&outputcurrency=0x1bbb8b730a9e8c9b5688b8fae862ab9b57b140f2'>
+                        <Button className="capitalize p-8">BUY PARAGON</Button>
+                    </Link>
                 </div>
 
             </motion.div>
