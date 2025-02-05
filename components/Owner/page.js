@@ -8,20 +8,20 @@ const Owner = () => {
 
   return (
 
-    <div className="bg-darkNavy flex flex-col justify-center items-center pb-28 pt-28">
-      <h1 className="text-gray-200 text-5xl font-extrabold">Our Team</h1>
+    <div className="bg-darkNavy flex flex-col justify-center items-center xl:py-20 py-10 md:py-10 lg:py-10">
+      <h1 className="text-gray-200 text-3xl md:text-4xl font-extrabold">Our Team</h1>
 
-      <div className="pt-8">
-        <span className="text-xl text-gray-200">
+      <div className="pt-8 w-full px-6 sm:px-10 text-center">
+        <span className="text-xl text-gray-200 md:text-2xl">
           A team highly committed to Privacy Enabling Technologies, Cyber Security, and Cryptocurrency.
         </span>
       </div>
 
-      <div className="relative w-7/12 pt-10 pb-10 pl-6 mt-10 rounded-lg bg-gradient-to-r from-indigo-700 to-purple-900 text-gray-200 
+      <div className="relative w-full sm:w-7/12 pt-6 pb-6 px-6 sm:px-8 mt-6 sm:mt-10 pl-6 rounded-lg bg-gradient-to-r from-indigo-700 to-purple-900 text-gray-200 
       before:absolute before:bottom-0 before:left-0 before:w-full before:h-[10px] before:rounded-b-lg before:bg-gradient-to-r before:from-purple-500 before:to-indigo-500 before:blur-md">
         <div className='flex justify-between'>
           <div className='pt-10'>
-          <h1 className="text-5xl font-bold">Robert Foster</h1>
+          <h1 className="text-3xl sm:text-5xl font-bold">Robert Foster</h1>
           <h2 className="text-lg">CEO & Founder</h2>
 
           {/* LinkedIn Icon with Link */}

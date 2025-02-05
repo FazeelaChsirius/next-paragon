@@ -5,7 +5,7 @@ import Video from '@/components/Video/page.jsx';
 
 const WhitePaper = () => {
   return (
-    <div className='pt-32 bg-darkNavy min-h-screen'>
+    <div className='pt-32 pb-24 bg-darkNavy min-h-screen'>
       <Mission />
       <Video />
     </div>

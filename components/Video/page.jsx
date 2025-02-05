@@ -3,8 +3,7 @@ import YouTube from 'react-youtube';
 
 const Video = () => {
   return (
-    <div className='bg-darkNavy pt-6 pb-32 flex justify-center items-center'>
-        
+    <div className='bg-darkNavy py-4 md:py-6 flex justify-center items-center'>
       <iframe
         width="80%"
         height="550px"

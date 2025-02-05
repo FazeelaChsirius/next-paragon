@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <nav className='fixed top-0 z-50 w-full flex items-center justify-between p-2 md:p-4 bg-gradient-to-b from-[#000022] to-[#000044] shadow-[2px_6px_15px_rgba(308,3,208,0.5)]'>
+    <nav className='fixed top-0 z-50 w-screen max-w-full overflow-hidden flex items-center justify-between px-4 py-3 p-2 md:p-4 bg-gradient-to-b from-[#000022] to-[#000044] shadow-[2px_6px_15px_rgba(308,3,208,0.5)]'>
       <div className='flex items-center justify-center'>
         <Link href='/'>
           <Image 
@@ -76,7 +76,7 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: 300 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="fixed top-0 right-0 h-full w-[50%] sm:w-[40%] bg-white shadow-lg p-5 flex flex-col z-50"
+            className="fixed top-0 right-0 h-full w-[60%] sm:w-[40%] bg-white shadow-lg p-5 flex flex-col z-50"
             style={{ backgroundImage: "url('/assets/circle.svg')" }}
           >
             {/* Close Button */}
@@ -90,7 +90,7 @@ const Navbar = () => {
               {['home', 'whitepaper', 'team', 'roadmap', 'socials', 'blog'].map((item) => (
                 <li key={item}>
                   <Link 
-                    href={`#${item}`}
+                    href={`/${item}`}
                     className="block text-darkNavy transition text-xl hover:text-lightPurple focus:text-lightPurple active:text-lightPurple"
                     onClick={() => setToggle(false)}
                   >

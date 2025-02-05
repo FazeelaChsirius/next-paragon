@@ -3,9 +3,10 @@ import React from 'react'
 
 const Team = () => {
   return (
-    <div>
+    <div className='pt-6 pb-24 bg-darkNavy min-h-screen'>
       <Owner />
     </div>
+    
   )
 }
 

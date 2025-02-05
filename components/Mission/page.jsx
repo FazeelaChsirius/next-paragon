@@ -9,16 +9,16 @@ import MotionWrap from '@/app/wrapper/MotionWrap';
 
 const Mission = () => {
   return (
-    <div className='bg-darkNavy flex justify-center items-center pb-14 pt-14'>
+    <div className='bg-darkNavy flex justify-center items-center py-10 md:py-10 lg:py-10'>
         <div className='w-[80%] bg-gradient-to-r from-purple-800 to-indigo-80 pt-20 pb-20 rounded-xl flex'>
             <div>
                 <h1 className='text-gray-200 text-5xl flex justify-center items-center font-extrabold'>Our Mission</h1>
                 <div>
                     <h1 className=" text-gray-200 pl-10">         
-                        <div className='pt-8'>
-                            <span className="text-xl text-gray-200">Ensure Ultimate Financial Privacy on the Blockchain:</span>
+                        <div className='pt-4 md:pt-8'>
+                            <span className="text-lg md:text-xl text-gray-200">Ensure Ultimate Financial Privacy on the Blockchain:</span>
                             <br />
-                            <span className="text-xl text-gray-200">Discover How Privacy, Security and Crypto Intersect</span>
+                            <span className="text-lg md:text-xl text-gray-200">Discover How Privacy, Security and Crypto Intersect</span>
                         </div>
                     </h1>
                 </div>
@@ -32,7 +32,7 @@ const Mission = () => {
                 </div>
             </div>
 
-            <div className="md:w-1/2 flex justify-center">
+            <div className="hidden md:w-1/2 md:flex justify-center">
                 <Image
                     src={bit} 
                     alt="header"
