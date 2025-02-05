@@ -22,9 +22,9 @@ export default function Home() {
       <Timeline />
       <Quotes />
       <Post />
-      <div>
-        <Socials />
-      </div>
+      <Footer />
+      <SocialMedia />
+      {/* <Socials /> */}
     </div>
   );
 }

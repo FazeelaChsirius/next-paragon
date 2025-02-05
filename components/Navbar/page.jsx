@@ -30,7 +30,7 @@ const Navbar = () => {
 
       <div className='hidden md:flex flex-1 items-center justify-center list-none'>
 
-        {['home', 'whitepaper', 'team', 'roadmap', 'socials', 'blog'].map((item, index) => (
+        {['home', 'whitepaper', 'team', 'roadmap', 'blog'].map((item, index) => (
           <li   
             key={index}
             className='mx-4 cursor-pointer flex flex-col group items-center justify-center'
@@ -87,7 +87,7 @@ const Navbar = () => {
 
             {/* Sidebar Links */}
             <ul className="mt-10 space-y-4 text-lg font-medium">
-              {['home', 'whitepaper', 'team', 'roadmap', 'socials', 'blog'].map((item) => (
+              {['home', 'whitepaper', 'team', 'roadmap', 'blog'].map((item) => (
                 <li key={item}>
                   <Link 
                     href={`/${item}`}

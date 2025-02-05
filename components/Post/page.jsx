@@ -35,8 +35,8 @@ const blogs = [
 
 const Post = () => {
   return (
-    <div className='bg-darkNavy pb-10 pt-24'>
-        <div className="container mx-auto px-4 py-10 bg-darkNavy">
+    <div className='bg-darkNavy pb-6 lg:pt-20 lg:pb-20 w-full pt-28 sm:pt-28'>
+        <div className="container mx-auto px-4 py-6 bg-darkNavy">
 
             <h2 className="text-5xl font-bold text-center pb-20 text-gray-200">Latest Blog</h2>
             <div className="grid md:grid-cols-3 gap-6">

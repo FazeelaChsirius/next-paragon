@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const SocialMedia = () => {
   return (
-    <div className='absolute pt-20 left-1/2 -translate-x-1/2 flex gap-4 z-50 p-6'>
+    <div className='top-4 flex justify-center items-center gap-4 z-50 bg-darkNavy pt-8 pb-16'>
 
       <div className='w-10 h-10 rounded-full bg-gray-200 border flex items-center justify-center transition-all duration-300 ease-in-out cursor-pointer group shadow-lg hover:bg-gradient-to-r from-purple-800 to-indigo-800'>
         <BsTwitter className="text-blue-800 group-hover:text-white" />

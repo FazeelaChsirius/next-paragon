@@ -22,7 +22,7 @@ const quotes = [
 const Quotes = () => {
   return (
     <div>
-        <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-darkNavy p-10 gap-10">
+        <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-darkNavy  px-6 sm:px-10 md:px-16 gap-10 pt-6">
 
             <div className="w-full md:w-1/2 flex justify-center">
                 <Image
@@ -34,7 +34,7 @@ const Quotes = () => {
                 />
             </div>
 
-            <div className="w-full md:w-2/3 flex flex-col gap-6 pr-10">
+            <div className="w-full md:w-1/2 flex flex-col gap-6 sm:pr-10">
                 {quotes.map((quote, index) => (
                     <motion.div
                         key={index}
