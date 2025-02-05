@@ -35,7 +35,7 @@ const blogs = [
 
 const Post = () => {
   return (
-    <div className='bg-darkNavy pt-4 pb-10'>
+    <div className='bg-darkNavy pb-10 pt-24'>
         <div className="container mx-auto px-4 py-10 bg-darkNavy">
 
             <h2 className="text-5xl font-bold text-center pb-20 text-gray-200">Latest Blog</h2>
@@ -61,7 +61,7 @@ const Post = () => {
                         <div className="p-4 text-gray-200">
                             <h3 className="text-xl font-semibold mb-2">{blog.title}</h3>
                             <p className=" mb-4">{blog.description}</p>
-                            <Link href='/blog'>
+                            <Link href='/file'>
                                 <Button>READ ME</Button>
                             </Link>
                         </div>

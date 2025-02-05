@@ -1,8 +1,13 @@
+import Footer from '@/components/Footer/page';
+import SocialMedia from '@/components/SocialMedia/SocialMedia';
 import React from 'react'
 
 const Socials = () => {
   return (
-    <div>Socials</div>
+    <div className='bg-darkNavy min-h-screen'>
+      <Footer />
+      <SocialMedia />
+    </div>
   )
 }
 

@@ -8,7 +8,7 @@ const Owner = () => {
 
   return (
 
-    <div className="bg-darkNavy flex flex-col justify-center items-center pb-28 ">
+    <div className="bg-darkNavy flex flex-col justify-center items-center pb-28 pt-28">
       <h1 className="text-gray-200 text-5xl font-extrabold">Our Team</h1>
 
       <div className="pt-8">

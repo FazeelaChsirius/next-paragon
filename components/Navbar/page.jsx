@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
 import logo from '../../public/assets/logo.png';
-import bgImg from '../../public/assets/bgIMG.png'
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import Button from '../Button/page';
@@ -25,22 +24,27 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <ul className='hidden md:flex flex-1 items-center justify-center list-none'>
-        {['whitepaper', 'team', 'roadmap', 'socials', 'blog', 'contact'].map((item, index) => (
+      {/* <div>
+        <Link href='/whitepaper'>Whitepaper</Link>
+      </div> */}
+
+      <div className='hidden md:flex flex-1 items-center justify-center list-none'>
+
+        {['home', 'whitepaper', 'team', 'roadmap', 'socials', 'blog'].map((item, index) => (
           <li   
             key={index}
             className='mx-4 cursor-pointer flex flex-col group items-center justify-center'
           >
             <div className='w-[5px] h-[5px] bg-transparent rounded-full mb-1 group-hover:bg-lightPurple'></div>
             <Link 
-              href={`#${item}`}
+              href={`/${item}`}
               className='text-gray-200 no-underline uppercase font-medium transition-all duration-300 ease-in-out hover:text-lightPurple'
             > 
               {item}
             </Link>
           </li>
         ))}
-      </ul>
+      </div>
 
       <div className="hidden md:block pr-6">
         <Link href='https://app.uniswap.org/swap/?chain=ethereum&outputcurrency=0x1bbb8b730a9e8c9b5688b8fae862ab9b57b140f2'>
@@ -83,7 +87,7 @@ const Navbar = () => {
 
             {/* Sidebar Links */}
             <ul className="mt-10 space-y-4 text-lg font-medium">
-              {['whitepaper', 'team', 'roadmap', 'socials', 'blog', 'contact'].map((item) => (
+              {['home', 'whitepaper', 'team', 'roadmap', 'socials', 'blog'].map((item) => (
                 <li key={item}>
                   <Link 
                     href={`#${item}`}

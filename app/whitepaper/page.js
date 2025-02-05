@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Header from '../../components/Header/page.jsx';
+import Mission from '@/components/Mission/page.jsx';
+import Video from '@/components/Video/page.jsx';
 
 const WhitePaper = () => {
   return (
-    <div>WhitePaper</div>
+    <div className='pt-32 bg-darkNavy min-h-screen'>
+      <Mission />
+      <Video />
+    </div>
   )
 }
 

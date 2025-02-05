@@ -10,7 +10,7 @@ const Button = ({ children, color='primary', ...rest}) => {
     }
     else if(color === 'secondary') {
         return (
-            <button type="button" className="bg-gradient-to-r from-purple-500 to-blue-600 hover:shadow-lg hover:brightness-125 text-white font-semibold py-3 px-4 rounded-md text-medium flex justify-center items-center capitalize">
+            <button type="button" className="bg-gradient-to-r from-purple-500 to-blue-600 hover:shadow-lg hover:brightness-125 text-white font-semibold py-4 px-4 rounded-md text-medium flex justify-center items-center capitalize">
                 <span className="capitalize">{children}</span>
             </button>
         )

@@ -10,7 +10,7 @@ const Timeline = () => {
     const events = ["2022-01-01", "2023-01-01", "2024-01-01"];
 
     return (
-        <div className="bg-darkNavy text-gray-200">
+        <div className="bg-darkNavy text-gray-200 pt-32">
             <div className="max-w-4xl mx-auto flex justify-center items-center flex-col">
                 <h1 className="font-bold text-center mb-6 text-5xl">Paragon Roadmap</h1>
                 <p className="text-2xl pb-10">Building Tomorrow:  A Blueprint for Paragon's Collective Futue</p>

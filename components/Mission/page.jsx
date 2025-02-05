@@ -3,10 +3,13 @@ import Button from '../Button/page';
 import { motion } from "framer-motion";
 import bit from '../../public/assets/bit.jpg';
 import Image from 'next/image';
+import Link from 'next/link';
+import AppWrap from '@/app/wrapper/AppWrap';
+import MotionWrap from '@/app/wrapper/MotionWrap';
 
 const Mission = () => {
   return (
-    <div className='bg-darkNavy flex justify-center items-center pb-28'>
+    <div className='bg-darkNavy flex justify-center items-center pb-14 pt-14'>
         <div className='w-[80%] bg-gradient-to-r from-purple-800 to-indigo-80 pt-20 pb-20 rounded-xl flex'>
             <div>
                 <h1 className='text-gray-200 text-5xl flex justify-center items-center font-extrabold'>Our Mission</h1>
@@ -19,9 +22,13 @@ const Mission = () => {
                         </div>
                     </h1>
                 </div>
-                <div className='flex justify-start items-center pl-10 pt-10 gap-6'>
-                    <Button color='secondary'>WHITEPAPER</Button>
-                    <Button color='secondary'>LITEPAPER</Button>
+                <div className='flex justify-start items-center pl-10 pt-14 gap-6'>
+                    <Link href='https://heyzine.com/flip-book/536bafafb9.html'>
+                        <Button color='secondary'>WHITEPAPER</Button>
+                    </Link>
+                    <Link href='https://heyzine.com/flip-book/6bbc443044.html'>
+                        <Button color='secondary'>LITEPAPER</Button>
+                    </Link>
                 </div>
             </div>
 
